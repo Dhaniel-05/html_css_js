@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <!-- En un form existen metodos como el 
+    action: la URL a la que se envía el formulario
+    post: el método de envío del formulario 
+    -->
+    <form action="" method="post">
+        <!-- Existen 4 atributos en los inputs: 
+        
+        type: el tipo de input, por ejemplo text, email, password, checkbox, radio, file, date, etc. 
+        
+        name: el nombre del campo, que se utiliza para identificarlo en el servidor cuando se envía el formulario (es un atributo de funcionalidad por lo tanto no es visible para el usuario es de configuración interna para el desarrollador).
+        
+        id: el identificador único del campo, que se utiliza para asociarlo con una etiqueta <label> y para aplicar estilos CSS.
+        
+        required: indica que el campo es obligatorio (es un atributo de funcionalidad por lo tanto no es visible para el usuario)
+        
+        placeholder: el texto que se muestra dentro del campo cuando está vacío, para indicar al usuario qué tipo de información se espera (es un atributo de presentación por lo tanto es visible para el usuario).
+
+        readonly: indica que el campo es de solo lectura, es decir, el usuario no puede modificar su valor (es un atributo de funcionalidad por lo tanto no es visible para el usuario).
+        
+        value: el valor del campo, que se envía al servidor cuando se envía el formulario.
+        -->
+        <input type="text" name="" id="" readonly placeholder="Solo lectura">
+
+        <input type="email" name="" id="" required placeholder="Correo electrónico" value="">
+
+        <input type="password" name="" id="">
+        
+        <input type="checkbox" name="" id="">
+
+        <input type="radio" name="" id="">
+        
+        <label>
+        <input type="file" name="" id="">
+        </label>
+
+        <label for="nombre">date:</label>
+        <input type="date" name="" id="">
+    </form>
+</body>
+</html>
