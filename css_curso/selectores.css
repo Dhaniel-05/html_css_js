@@ -1,0 +1,98 @@
+/***
+ * Archivo: selectores.css
+ * Descripción: Este archivo contiene estilos para los selectores de CSS.
+ * Autor: [Daniel Martínez Payán]
+ * Fecha: [10 de mayo de 2026]
+ ***/
+
+/* Selector universal */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Selector por elemento */
+h1{
+    color: blue;
+}
+
+p{
+    color: green;
+}
+
+/* Selectores de clase */
+.titulo{
+    font-size: 24px;
+    color: teal;
+}
+.parrafo{
+    font-size: 20px;
+    color: blue;
+}
+
+.tecnologias{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.tecnologia_html{
+    font-size: 18px;
+    color: red;
+}
+
+.tecnologia_css{
+    font-size: 18px;
+    color: blue;
+}
+
+.tecnologia_javascript{
+    font-size: 18px;
+    color: rgb(216, 159, 3);
+}
+
+/* Selectores de ID */
+#subtitulo {
+    font-family: cursive;
+    font-size: 16px;
+}
+
+#nickname, #password {
+    border: 2px solid #ccc; /* Borde por defecto */
+    font-size: 16px;
+}
+
+/* Borde verde si el campo tiene contenido */
+#nickname:valid, #password:valid {
+    border-color: green; /* Borde verde si es válido */
+}
+
+/* Borde anaranjado si el campo está vacío */
+#nickname:placeholder-shown, #password:placeholder-shown {
+    border-color: orange; /* Borde anaranjado si está vacío */
+}
+
+/*
+Consideraciones adicionales: 
+puedes agrupar múltiples selectores en CSS utilizando comas para aplicar las mismas reglas de estilo a varios elementos. Esto es muy útil cuando deseas que varios elementos compartan las mismas propiedades, lo que hace que tu código sea más limpio y fácil de mantener.
+
+Eficiencia: Agrupar selectores es eficiente porque reduces la repetición de código. Si varios elementos necesitan las mismas propiedades, puedes definirlas una vez en lugar de repetirlas para cada selector.
+
+Cambios Futuros: Si en el futuro decides cambiar el estilo para ambos elementos, solo necesitarás hacerlo en un solo lugar, lo que facilita el mantenimiento.
+
+Aplicabilidad: Asegúrate de que las propiedades que estás aplicando sean apropiadas para todos los elementos seleccionados. Por ejemplo, si solo deseas aplicar un estilo a uno de los elementos, no deberías agruparlo.
+
+Propiedades específicas: En algunos casos, es posible que quieras aplicar propiedades específicas a cada selector dentro del grupo. En ese caso, puedes usar selectores adicionales para aplicar estilos específicos a cada elemento.
+
+Pseudoclases: :valid y :placeholder-shown son pseudoclases que se utilizan para seleccionar elementos de formulario en función de su estado de validación y si están mostrando un marcador de posición, respectivamente.
+
+valid
+Descripción: La pseudoclase :valid se utiliza para seleccionar elementos de formulario que son válidos según las reglas de validación definidas en HTML. Esto incluye elementos que tienen un valor que cumple con los requisitos establecidos por sus atributos, como required, minlength, maxlength, pattern, etc.
+
+Origen: Esta es una propiedad nativa de CSS que forma parte de la especificación de CSS3. Se utiliza comúnmente en formularios HTML para aplicar estilos a campos que contienen datos válidos.
+
+placeholder-shown
+Descripción: La pseudoclase :placeholder-shown se utiliza para seleccionar elementos de entrada que están mostrando su texto de marcador de posición (placeholder). Esto significa que el campo está vacío y el texto del placeholder es visible.
+
+Origen: Esta también es una propiedad nativa de CSS que se introdujo en CSS3. Es útil para aplicar estilos a campos de entrada vacíos que aún no han sido modificados por el usuario.
+*/
+

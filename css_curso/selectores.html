@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectores</title>
+    <link rel="stylesheet" href="selectores.css">
+</head>
+<body>
+    <!-- Selector Elements o Selección por elemento: este busca el nombre del elemento html y modifica su estilo -->
+    <h1>Título</h1>
+    <p>Párrafo</p>
+
+    <!-- Selector por clase: este busca el atributo class y modifica su estilo. Las clases permiten asignarle a los elementos un nombre para identificarlos. Es como separar los elementos por clases, al separar los elementos por clase cuando modificamos el estilo solo se afectan los elementos pertenecientes a esa clase. Para utilizar este selector se coloca un punto (.) antes del nombre de la clase -->
+    <!-- Las clases se pueden utilizar para muchos elementos, la practicidad simplifica el proceso de estilo, dado que podemos asignarle a muchos elementos una clase general para aplicarles el mismo estilo -->
+    <!-- Las clases no deben repetirse en un mismo documento, tampoco un nombre que no indique para que sirve, debe decirle al desarrollador el por que se utliza el nombre de esa clase y esta sugerir a simple vista que es lo que representa y para que sirve -->
+    <h2 class="titulo">Subtítulo</h2>
+    <p class="parrafo">Este es un párrafo con clase.</p>
+    
+    <ul class="tecnologias">
+        <li class="tecnologia_html">HTML</li>
+        <li class="tecnologia_css">CSS</li>
+        <li class="tecnologia_javascript">Javascript</li>
+    </ul>
+
+    <!-- Selector por id: este busca el atributo id y modifica su estilo. El id es un identificador único que se asigna a un elemento para diferenciarlo de los demás. 
+    Consideraciones al Usar IDs:
+    Unicidad: Cada id debe ser único en el documento HTML. No debe repetirse en otros elementos.
+    Significado: El nombre del id debe ser descriptivo y representar claramente el propósito del elemento.
+    Uso en JavaScript y CSS: Los id son útiles para aplicar estilos específicos en CSS y para seleccionar elementos en JavaScript.
+    -->
+    <h3 id="subtitulo">Identificador único</h3>
+    <input type="text" name="apodo" id="nickname" placeholder="Introduce tu apodo" required>
+    <input type="password" id="password" placeholder="Introduce tu contraseña" required>
+
+</body>
+</html>
