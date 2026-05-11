@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: 'Lucida Sans'; /* En este caso la tipografía Lucida Sans debe ir entre comillas simples por que de lo contrario no se mostrará correctamente */
+    font-size: 18px;
+    color: teal;
+    font-style: normal; /* La propiedad font-style se utiliza para controlar el estilo del texto. En este caso, se establece en "normal" para que el texto tenga un estilo estándar sin cursiva ni oblicuo. Esto es útil para mantener una apariencia clara y legible en los encabezados, asegurando que el texto se presente de manera profesional y fácil de leer. */
+    text-align: center; /* La propiedad text-align se utiliza para alinear el texto dentro de su contenedor. En este caso, se establece en "center" para centrar el texto horizontalmente dentro del elemento h1. Esto puede ayudar a crear un diseño más equilibrado y atractivo visualmente, especialmente para títulos o encabezados que se desean destacar en la página. */
+}
+
+p {
+    font-family: 'Arial', sans-serif; /* En este caso la tipografía Arial no necesita comillas por que es una tipografía común, pero se le añade una coma y la palabra sans-serif para especificar que en caso de que no se pueda mostrar la tipografía Arial, el navegador intentará mostrar cualquier otra tipografía sin serifas. La tipografía puede colocarse o añadir una coma para especificar múltiples opciones que se leeran de izquierda a derecha por el navegador */
+    font-size: 14px;
+    color: gray;
+    font-weight: normal; /* La propiedad font-weight se utiliza para controlar el grosor del texto. En este caso, se establece en "normal" para que el texto tenga un peso estándar. Esto es útil para mantener una apariencia legible y equilibrada en el contenido, evitando que el texto sea demasiado grueso o demasiado delgado, lo que puede afectar la legibilidad y la experiencia del usuario. */
+    font-style: italic; /* La propiedad font-style se utiliza para aplicar un estilo cursivo al texto. En este caso, se establece en "italic" para que el texto tenga una apariencia inclinada, lo que puede ser útil para resaltar ciertas palabras o frases dentro del contenido. El uso de cursiva puede ayudar a enfatizar información importante o a diferenciar ciertos elementos del texto, mejorando así la legibilidad y la experiencia del usuario. */
+    text-align: left; /* La propiedad text-align se utiliza para alinear el texto dentro de su contenedor. En este caso, se establece en "left" para alinear el texto a la izquierda. Esto es útil para mantener una apariencia tradicional y fácil de leer, especialmente para párrafos o bloques de texto que se presentan en un formato más largo. La alineación a la izquierda es comúnmente utilizada en la mayoría de los diseños web y es una opción segura para garantizar que el contenido sea legible y accesible para los usuarios. */
+    text-decoration: none; /* La propiedad text-decoration se utiliza para controlar la decoración del texto, como subrayados, tachados o líneas sobre el texto. En este caso, se establece en "none" para eliminar cualquier decoración aplicada al texto. Esto es útil para mantener una apariencia limpia y sin distracciones, especialmente cuando se desea que el texto se presente de manera simple y directa. Al eliminar decoraciones innecesarias, se mejora la legibilidad y se crea un diseño más profesional y atractivo visualmente. */
+}
+
+a {
+    text-decoration: none;
+    line-height: 1.5; /* La propiedad line-height se utiliza para controlar el espacio entre las líneas de texto. En este caso, se establece en "1.5" para aumentar el espacio vertical entre las líneas del enlace. Esto puede mejorar la legibilidad y la apariencia visual del enlace, especialmente si el texto es más largo o si se desea crear un diseño más espacioso y atractivo. Un line-height adecuado puede ayudar a evitar que el texto se vea amontonado y facilitar la lectura para los usuarios. */
+    font-family: monospace;
+    letter-spacing: 8px; /* La propiedad letter-spacing se utiliza para controlar el espacio entre las letras de un texto. En este caso, se establece en "8px" para aumentar significativamente el espacio entre cada letra del enlace. Esto puede crear un efecto visual único y llamativo, haciendo que el enlace destaque en la página. Sin embargo, es importante usar esta propiedad con moderación, ya que un espaciado excesivo puede dificultar la lectura y afectar negativamente la experiencia del usuario. Es recomendable ajustar el valor de letter-spacing según el diseño general de la página y la legibilidad del texto. */
+    text-transform: capitalize; /* La propiedad text-transform se utiliza para controlar la transformación del texto. En este caso, se establece en "capitalize" para convertir la primera letra de cada palabra del enlace a mayúscula. Esto puede ayudar a resaltar el enlace y darle un aspecto más destacado en la página. El uso de mayúsculas puede ser efectivo para títulos, encabezados o enlaces importantes, ya que atrae la atención del usuario y mejora la visibilidad del contenido. Sin embargo, es importante usar esta propiedad con moderación, ya que un uso excesivo de mayúsculas puede dificultar la lectura y afectar negativamente la experiencia del usuario. Es recomendable considerar el contexto y el diseño general de la página al aplicar text-transform. */
+}
+
+/*
+Valores de Tipografía:
+Los valores de grosor de la tipografía en CSS se representan mediante números que van del 100 al 900. 
+Estos valores son parte de la propiedad font-weight y representan diferentes niveles de grosor del texto.
+
+- 100: Ultra ligero
+- 200: Ligero
+- 300: Regular ligero
+- 400: Regular (normal)
+- 500: Medio
+- 600: Semi-negrita
+- 700: Negrita
+- 800: Negrita oscura
+- 900: Ultra negrita
+
+Rango de Grosor:
+Si un diseñador de tipografía define pesos desde 100 hasta 600, pero no modifica los pesos en 500 y 600, significa que el rango entre 100 y 500 no tiene valores "intermedios" definidos. En este caso, los valores 200, 300, y 400 pueden no tener variaciones visuales significativas.
+
+Por ejemplo:
+- Si la tipografía comienza en 100 y se termina en 600, los pesos intermedios (200, 300, 400) podrían no tener un cambio visual notable. 
+- Al llegar a 600, el texto se vuelve más grueso, pero no hay garantía de que haya una diferencia visual entre 500 y 600 si el diseñador no proporciona esas variaciones.
+
+Lo mismo aplica para los pesos de 700 a 900. Si no hay cambios definidos entre 700 y 800, y entre 800 y 900, el texto podría no mostrar diferencias significativas entre esos valores.
+
+Nota:
+Es importante considerar que no todas las tipografías implementan todos los pesos, y algunos pueden tener un rango limitado. Por lo tanto, es recomendable verificar la documentación de la tipografía específica que se está utilizando.
+*/
+
+/*
+Uso de font-weight: bold y bolder:
+
+- **font-weight: bold**: 
+Cuando se utiliza `bold`, se está aplicando un peso de 700 a la tipografía. Este valor es parte de la escala de grosor que va del 100 al 900, donde 700 representa un estilo de texto negrita estándar. Es un valor comúnmente utilizado para resaltar texto importante o para dar énfasis en el contenido.
+
+- **font-weight: bolder**:
+La propiedad `bolder` se utiliza para aumentar el grosor del texto más allá del peso actual de la fuente. Cuando se aplica `bolder`, el navegador calculará un peso más grueso que el que ya está en uso, subiendo un escalón en la escala de pesos. Por ejemplo:
+    - Si el texto tiene un `font-weight` de 400 (normal) y se aplica `bolder`, el navegador puede asignar un peso de 700 (bold).
+    - Si el texto ya es `bold` (700), usar `bolder` podría llevarlo a un peso de 800 o incluso 900, dependiendo de la tipografía y su diseño.
+
+Nota:
+- El efecto visual de `bolder` depende de la tipografía utilizada y de los pesos que están disponibles. No todas las fuentes tienen todos los pesos definidos, por lo que el resultado puede variar según la fuente seleccionada.
+- Para un control más preciso sobre el grosor del texto, es recomendable utilizar valores numéricos específicos (como 400, 700, etc.) en lugar de `bold` o `bolder`, especialmente si se requiere consistencia en el diseño.
+*/
+
+/*
+Uso de text-align:
+
+La propiedad `text-align` se utiliza para alinear el contenido de texto dentro de un contenedor. Los valores más comunes son `left`, `right`, `center`, y `justify`. La alineación del texto se comporta de manera diferente dependiendo de si el contenedor es un elemento de bloque o un elemento en línea.
+
+1. **Elementos de Bloque vs. Elementos en Línea**:
+   - **Elementos de Bloque**: Estos elementos ocupan todo el ancho disponible de su contenedor y comienzan en una nueva línea. Ejemplos incluyen `<div>`, `<h1>`, `<p>`, etc. Cuando se aplica `text-align` a un elemento de bloque, el texto dentro de ese contenedor se alinea según el valor especificado (izquierda, derecha, centro o justificado).
+   - **Elementos en Línea**: Estos elementos solo ocupan el espacio necesario para su contenido y no comienzan en una nueva línea. Ejemplos incluyen `<span>`, `<a>`, etc. Cuando se aplica `text-align` a un elemento en línea, no tendrá un efecto visible en la alineación del texto, ya que el elemento en línea no tiene un ancho definido que permita la alineación. 
+
+2. **Valores de text-align**:
+   - **left**: Alinea el texto a la izquierda del contenedor.
+   - **right**: Alinea el texto a la derecha del contenedor.
+   - **center**: Centra el texto dentro del contenedor.
+   - **justify**: Distribuye el texto de manera que las líneas comiencen y terminen en los bordes del contenedor, creando un aspecto de bloque uniforme en ambos lados.
+
+3. **Ejemplo Práctico**:
+    - Si tienes un contenedor con un ancho mayor que el contenido (por ejemplo, un `<div>` o un `<h1>`), y aplicas `text-align: center`, el texto se centrará dentro del contenedor.
+    - Si el contenedor es del mismo tamaño que el contenido, como en el caso de un elemento en línea, la alineación no tendrá efecto visible. Por ejemplo, si un `<span>` se alinea a la derecha, no se notará porque el ancho del `<span>` es igual al contenido.
+
+4. **Justificación**:
+    - La propiedad `text-align: justify` ajusta el texto para que las líneas comiencen y terminen en los bordes del contenedor, similar a como se hace en procesadores de texto como Word o Google Docs. Esto crea un aspecto más uniforme en el bloque de texto, pero puede generar espacios adicionales entre palabras si la línea no se llena completamente.
+
+Nota:
+- Para obtener un control más preciso sobre la alineación y el diseño, es importante entender las diferencias entre elementos de bloque y en línea y cómo `text-align` se aplica a cada uno.
+*/
